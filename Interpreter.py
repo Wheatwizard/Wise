@@ -58,5 +58,5 @@ class Interpreter(object):
 		self.pointer += 1
 		return True
 	def __str__(self):
-		functions = {"i":str,"b":bin,"a":lambda x:chr(x%256)}
+		functions = {"i":str,"b":lambda x:bin(x)[2:],"a":lambda x:chr(x%256)}
 		return " ".join(map(functions[self.output],self.stack))
