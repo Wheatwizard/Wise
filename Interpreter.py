@@ -50,7 +50,11 @@ class Interpreter(object):
 			else:
 				self.stack = [0]
 		elif command == "?":
-			self.stack = [self.pick()] + self.stack
+			if self.stack:
+				self.stack = [self.pop()] + self.stack
+		elif command == "!":
+			if self.stack:
+				self.stack = self.stack[1:] + [self.stack[0]]
 		self.pointer += 1
 		return True
 	def __str__(self):

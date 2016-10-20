@@ -57,11 +57,13 @@ Wise has 11 operations.
    
    Makes a second copy of the top item on the stack
    
-*  `?`
+*  `?` and `!`
 
    Roll
    
-   Moves the top item to the bottom of the stack
+   `?` moves the top item to the bottom of the stack
+   
+   `!` moves the bottom item to the top of the stack
    
 *  `[` and `]`
 
