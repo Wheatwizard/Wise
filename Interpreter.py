@@ -51,12 +51,12 @@ class Interpreter(object):
 				self.stack = [0]
 		elif command == "?":
 			if self.stack:
-				self.stack = [self.pop()] + self.stack
+				self.stack = [self.stack.pop()] + self.stack
 		elif command == "!":
 			if self.stack:
 				self.stack = self.stack[1:] + [self.stack[0]]
 		self.pointer += 1
 		return True
 	def __str__(self):
-		functions = {"i":str,"b":lambda x:bin(x)[2:],"a":lambda x:chr(x%256)}
+		functions = {"i":str,"b":lambda x:"-"+bin(x)[3:] if x < 0 else bin(x)[2:],"a":lambda x:chr(x%256)}
 		return " ".join(map(functions[self.output],self.stack))
