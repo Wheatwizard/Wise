@@ -26,6 +26,7 @@ if __name__ == "__main__":
 	except:
 		print "Please provide a valid file."
 	else:
-		interpreter = Interpreter(open(args[0]).read(),options.OUTPUT,*map(int,args[1:]))
+		interpreter = Interpreter(f.read(),options.OUTPUT,*map(int,args[1:]))
 		while interpreter.step():pass
 		print interpreter
+		f.close()
