@@ -17,7 +17,7 @@ class Interpreter(object):
 		if command == "[":
 			if not self.peak:
 				tempScope = 1
-				while not tempScope and self.pointer <= len(self.source):
+				while tempScope and self.pointer <= len(self.source):
 					self.pointer += 1
 					if self.source[self.pointer] == "]":
 						self.tempScope -= 1
