@@ -1,7 +1,8 @@
 # Wise
+
 A esolang based in bitwise operators
 
-##Description
+## Description
 
 Wise is a stack based programming language centered around bitwise operations.
 
