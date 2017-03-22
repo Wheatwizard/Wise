@@ -48,9 +48,9 @@ Wise has 11 operations.
   
 *  `-`
 
-  Negativize
+   Negativize
   
-  Multiply the number on the top of the stack by `-1`
+   Multiply the number on the top of the stack by `-1`
   
 *  `:`
 
