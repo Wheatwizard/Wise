@@ -42,9 +42,9 @@ Wise has 11 operations.
   
 *  `>`
 
-  Bitshift Right
+   Bitshift Right
   
-  Takes the top of the stack and moves every bit one place to the right throwing out the bit that was in the ones place
+   Takes the top of the stack and moves every bit one place to the right throwing out the bit that was in the ones place
   
 *  `-`
 
