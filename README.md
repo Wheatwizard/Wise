@@ -36,9 +36,9 @@ Wise has 11 operations.
   
 * `<`
 
-  Bitshift Left
+   Bitshift Left
   
-  Takes the top of the stack and moves every bit one place to the left leaving a zero in the ones place
+   Takes the top of the stack and moves every bit one place to the left leaving a zero in the ones place
   
 *  `>`
 
