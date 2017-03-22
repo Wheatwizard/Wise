@@ -1,7 +1,8 @@
 # Wise
+
 A esolang based in bitwise operators
 
-##Description
+## Description
 
 Wise is a stack based programming language centered around bitwise operations.
 
@@ -47,9 +48,9 @@ Wise has 11 operations.
   
 *  `-`
 
-  Negativize
+   Negativize
   
-  Multiply the number on the top of the stack by `-1`
+   Multiply the number on the top of the stack by `-1`
   
 *  `:`
 
