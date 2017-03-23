@@ -13,18 +13,18 @@ if __name__ == "__main__":
 		help="Formats output as binary"
 	)
 	parser.add_option(
-		"-f",
-		"--file",
-		dest="filename",
-		help="File name for input arguments"
-	)
-	parser.add_option(
 		"-a",
 		"--ascii",
 		dest="OUTPUT",
 		action="store_const",
 		const="a",
 		help="Formats output as ASCII",
+	)
+	parser.add_option(
+		"-f",
+		"--file",
+		dest="filename",
+		help="File name for input arguments"
 	)
 	(options, args) = parser.parse_args()
 	try:
