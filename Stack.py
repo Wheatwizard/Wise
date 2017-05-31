@@ -7,5 +7,5 @@ class Stack(list):
 	def pop(self):
 		try:
 			return super(Stack, self).pop()
-		except IndexError:
+		except:
 			return 0

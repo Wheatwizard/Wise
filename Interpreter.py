@@ -48,10 +48,10 @@ class Interpreter(object):
 				self.stack = [0]
 		elif command == "?":
 			if self.stack:
-				self.stack = [self.stack.pop()] + self.stack
+				self.stack = Stack([self.stack.pop()] + self.stack)
 		elif command == "!":
 			if self.stack:
-				self.stack = self.stack[1:] + [self.stack[0]]
+				self.stack = Stack(self.stack[1:] + [self.stack[0]])
 		self.pointer += 1
 		return True
 
